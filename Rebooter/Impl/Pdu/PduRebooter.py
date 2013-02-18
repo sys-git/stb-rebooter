@@ -108,7 +108,7 @@ class PduRebooter(object):
             sys.stderr.write("PDU sent OFF ok!")
 
 if __name__ == '__main__':
-    target = PduSshTarget("192.168.16.140", username="root", password="onlydebug")
+    target = PduSshTarget("192.168.16.140", username="xxx", password="yyy")
     #    3 STBs:
     target.setMapping({"127.0.0.2":0, "127.0.0.2":1, "127.0.0.3":2})
     rebooter = PduRebooter(RebooterType.SSH, target)

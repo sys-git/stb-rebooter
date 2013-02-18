@@ -171,7 +171,7 @@ class SshRebooter(object):
             self._allowSend()
 
 if __name__ == '__main__':
-    t = SSHTarget("192.168.16.140", "root", "onlydebug")
+    t = SSHTarget("192.168.16.140", "xxx", "zzz")
     eResult = "hello world!"
     rebooter = SshRebooter(t, defaultCommand="echo '%(E)s'"%{"E":eResult})
     result = rebooter.reboot(waitForResponse=True)
